@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 class CalculadoraTestadaTest {
 
@@ -31,7 +33,6 @@ class CalculadoraTestadaTest {
 
     @Test
     void deveSomar3Mais3Igual6() {
-
         //arrange
         int valorA = 3;
         int valorB = 3;
@@ -46,7 +47,6 @@ class CalculadoraTestadaTest {
 
     @Test
     void deveSomarValorFracionado() {
-
         //arrange
         double valorA = 2.5;
         double valorB = 3;
@@ -57,5 +57,20 @@ class CalculadoraTestadaTest {
         //assert
         double expected = 5.5;
         Assertions.assertEquals(expected, result);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "2, 2, 4",
+            "3, 3, 6",
+            "2.5, 3, 5.5"
+    })
+    void deveSomarDiferentesValoresValorFracionado(
+            double valorA,
+            double valorB,
+            double esperado) {
+        double result = target.somar(valorA, valorB);
+
+        Assertions.assertEquals(esperado, result);
     }
 }
