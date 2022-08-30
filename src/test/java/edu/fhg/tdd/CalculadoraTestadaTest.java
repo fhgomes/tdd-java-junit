@@ -94,6 +94,22 @@ class CalculadoraTestadaTest {
             Assertions.assertEquals(expected, result);
         }
 
+        @Test
+        void deveSomar4Valores() {
+            //arrange
+            int valorA = 2;
+            int valorB = 3;
+            int valorC = 4;
+            int valorD = 5;
+
+            //act
+            double result = target.somarMultiplos(valorA, valorB, valorC, valorD);
+
+            //assert
+            int expected = 9;
+            Assertions.assertEquals(expected, result);
+        }
+
     }
 
 }

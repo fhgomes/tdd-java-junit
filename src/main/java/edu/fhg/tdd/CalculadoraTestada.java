@@ -8,4 +8,8 @@ public class CalculadoraTestada {
     public double somarMultiplos(double valorA, double valorB, double valorC) {
         return valorA + valorB + valorC;
     }
+
+    public double somarMultiplos(double valorA, double valorB, double valorC, double valorD) {
+        return valorA + valorB + valorC + valorD;
+    }
 }
