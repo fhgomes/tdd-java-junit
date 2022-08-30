@@ -20,4 +20,11 @@ class CalculadoraTestadaTest {
 
         Assertions.assertEquals(6, target.somar(3, 3));
     }
+
+    @Test
+    void deveSomarValorFracionado() {
+        CalculadoraTestada target = new CalculadoraTestada();
+
+        Assertions.assertEquals(5.5, target.somar(2.5, 3));
+    }
 }
