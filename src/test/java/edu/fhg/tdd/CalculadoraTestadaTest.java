@@ -11,6 +11,6 @@ class CalculadoraTestadaTest {
     void deveSomar2Mais2Igual4() {
         CalculadoraTestada target = new CalculadoraTestada();
 
-        Assertions.assertEquals(4, 2);
+        Assertions.assertEquals(4, target.somar(2, 2));
     }
 }
