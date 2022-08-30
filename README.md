@@ -9,7 +9,15 @@ Maven can build project
 Maven can run testes
 Maven can run code coverage
 
-Command to turn embedded MAVEN
+## Command to turn embedded MAVEN
 
 `mvn wrapper:wrapper`
+
+## Command to compile
+
+`.\mvnw compile`
+
+## Command to teste
+
+`.\mvnw test`
 
