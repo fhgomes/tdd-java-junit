@@ -17,19 +17,45 @@ class CalculadoraTestadaTest {
 
     @Test
     void deveSomar2Mais2Igual4() {
+        //arrange
+        int valorA = 2;
+        int valorB = 2;
 
-        Assertions.assertEquals(4, target.somar(2, 2));
+        //act
+        double result = target.somar(valorA, valorB);
+
+        //assert
+        int expected = 4;
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
     void deveSomar3Mais3Igual6() {
 
-        Assertions.assertEquals(6, target.somar(3, 3));
+        //arrange
+        int valorA = 3;
+        int valorB = 3;
+
+        //act
+        double result = target.somar(valorA, valorB);
+
+        //assert
+        int expected = 6;
+        Assertions.assertEquals(expected, result);
     }
 
     @Test
     void deveSomarValorFracionado() {
 
-        Assertions.assertEquals(5.5, target.somar(2.5, 3));
+        //arrange
+        double valorA = 2.5;
+        double valorB = 3;
+
+        //act
+        double result = target.somar(valorA, valorB);
+
+        //assert
+        double expected = 5.5;
+        Assertions.assertEquals(expected, result);
     }
 }
