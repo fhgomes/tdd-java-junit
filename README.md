@@ -8,3 +8,8 @@ Maven ensure de dependencies is configured
 Maven can build project
 Maven can run testes
 Maven can run code coverage
+
+Command to turn embedded MAVEN
+
+`mvn wrapper:wrapper`
+
