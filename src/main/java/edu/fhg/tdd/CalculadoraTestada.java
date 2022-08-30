@@ -2,6 +2,6 @@ package edu.fhg.tdd;
 
 public class CalculadoraTestada {
     public int somar(int valorA, int valorB) {
-        return 4;
+        return valorA + valorB;
     }
 }

@@ -13,4 +13,11 @@ class CalculadoraTestadaTest {
 
         Assertions.assertEquals(4, target.somar(2, 2));
     }
+
+    @Test
+    void deveSomar3Mais3Igual6() {
+        CalculadoraTestada target = new CalculadoraTestada();
+
+        Assertions.assertEquals(6, target.somar(3, 3));
+    }
 }
